@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String slicing</title>
+  </head>
+  <body>
+    <script>
+      const fullName = "Test Code";
+
+      //let firstName = fullName.slice(0, 4);
+      //let lastName = fullName.slice(5, 9);
+      //console.log(`First name is ${firstName}`);
+      //console.log(`Last name is: ${lastName}`); //works with negative numbers too.
+
+      //more efficient method
+      let firstName = fullName.slice(0, fullName.indexOf(" "));
+      let lastName = fullName.slice(fullName.indexOf(" "));
+      console.log(`First name is ${firstName}`);
+      console.log(`Last name is: ${lastName}`);
+
+      const email = "testmail@gmail.com";
+
+      let username = email.slice(0, email.indexOf("@"));
+      let extension = email.slice(email.indexOf("@") + 1);
+
+      console.log(username);
+      console.log(extension);
+    </script>
+  </body>
+</html>
