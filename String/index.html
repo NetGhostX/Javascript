@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Methods</title>
+  </head>
+  <body>
+    <script>
+      let username = "myusername";
+      username.charAt(0);
+      username.startsWith("m");
+      username.length;
+      username.indexOf("e");
+
+      if (username.startsWith(" ")) {
+        console.log("username cant begin with  ' '");
+      } else {
+        console.log(username);
+      }
+
+      let phoneNumber = "123-456-7890";
+      phoneNumber = phoneNumber.replaceAll("-", "");
+      console.log(phoneNumber);
+
+      phoneNumber = phoneNumber.padStart(15, "0"); //.padEnd also exists
+      console.log(phoneNumber);
+    </script>
+  </body>
+</html>
