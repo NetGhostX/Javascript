@@ -9,9 +9,9 @@
     <script>
       let username = "";
 
-      while (username === "") {
+      do {
         username = window.prompt(`Enter your name`);
-      }
+      } while (username === "" || username === null);
 
       console.log(username);
     </script>
