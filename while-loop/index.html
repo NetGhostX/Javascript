@@ -14,6 +14,23 @@
       } while (username === "" || username === null);
 
       console.log(username);
+
+      //example:
+      let loggedIN = false;
+      let username1;
+      let password;
+
+      while (!loggedIN) {
+        username1 = window.prompt(`Please enter your username`);
+        password = window.prompt(`Enter your password`);
+
+        if(username1 === "myUsername" && password === "myPassword"){
+              loggedIN = true;
+              console.log("You are logged in!!");
+        }else{
+              console.log(`Invalid credentials!! Please try again`);
+        }
+      }
     </script>
   </body>
 </html>
