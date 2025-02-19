@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spread Operator</title>
+  </head>
+  <body>
+    <script>
+      let numbers = [1, 2, 3, 4, 5];
+
+      let maximum = Math.max(...numbers);
+      let minimum = Math.min(...numbers);
+
+      console.log(minimum);
+
+      //using spread operator on strings
+
+      let username = "Kelvin Coding";
+      let letters = [...username].join("-");
+
+      console.log(`username with spread and join: ${letters}`);
+
+      //combining two arrays with spread ...
+
+      let fruits = ["apple", "orange", "banana"];
+      let vegetables = ["carrots", "celery", "potatoes"];
+
+      let foods = [...fruits, ...vegetables, "eggs", "milk"];
+    </script>
+  </body>
+</html>
