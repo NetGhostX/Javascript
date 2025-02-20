@@ -1,6 +1,4 @@
 
-
-
 function rollDice(){
        const numOfDice = document.getElementById("numOfDice").value;
        const diceResults = document.getElementById("diceResults");
