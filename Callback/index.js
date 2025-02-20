@@ -12,3 +12,4 @@ function leave(){
 function goodbye(){
     console.log("Hello!");
 }
+ 
