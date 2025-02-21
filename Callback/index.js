@@ -1,4 +1,4 @@
-//callback = a function that is passed as an argument to another function
+//callback = a function that is passed as an argument to another function.
 
 hello(goodbye);
 
