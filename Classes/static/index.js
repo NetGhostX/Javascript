@@ -1,3 +1,6 @@
+// static = keyword that defines properties or methods 
+
+
 class MathUtil{
        static PI = 3.14159;
        static getDiameter(radius){
