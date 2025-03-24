@@ -14,10 +14,16 @@ class Animal{
 
 class Rabbit extends Animal{
     static name = "rabbit";
+    run(){
+        console.log(`This ${this.name} is running`);
+    }
 }
 
 class Fish extends Animal{
     name = "fish";
+    swimming(){
+        console.log(`This ${this.name} is swimming`);
+    }
 }
 
 class Hawk extends Animal{
@@ -29,5 +35,6 @@ const fish = new Fish();
 const hawk = new Hawk();
 
 console.log(fish.alive);
+fish.swimming();
 fish.eat();
 fish.sleep();
