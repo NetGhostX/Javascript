@@ -66,4 +66,4 @@ const person3 = new Person("Squidward", 45, "126 Conch St.",
 )
 
 
-console.log(person1.address.street)
+console.log(person1.address.street) 
